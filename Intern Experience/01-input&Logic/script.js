@@ -11,17 +11,15 @@
 
 // WRITE YOUR CODE BELOW
 const textInput = document.querySelector('#user-input');
-let charCount = document.querySelector('#char-count');
+const charCount = document.querySelector('#char-count');
 
 textInput.addEventListener ("input", () => {
-    // Grabs the size of the texts
     const textLength = textInput.value.length;
-    //Update the number from 0 to the textLength
     charCount.innerText = textLength;
 
     if (textLength > 200) {
         charCount.style.color = "red";
     } else {
-        charCount.style.color = "black";
+        charCount.style.color = "#555";
     }
 })

@@ -23,6 +23,13 @@ textarea {
     border: 1px solid #ccc;
     border-radius: 5px;
     resize: none; /* Stops user from dragging the box size */
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+textarea:focus {
+    border-color: #007BFF;
+    outline: none;
 }
 
 .stats {
