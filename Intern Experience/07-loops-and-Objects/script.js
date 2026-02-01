@@ -15,7 +15,7 @@ loadBtn.addEventListener('click', () => {
 
     // 3. Clear the listContainer first! (So we don't add duplicates if we click twice)
     //    Use: listContainer.innerHTML = "";
-    listContainer.innerHtml = "";
+    listContainer.innerHTML = "";
     // 4. Start the LOOP using products.forEach().
     //    Pass a variable name like 'product' or 'item' into the function.
     products.forEach((product) => {
@@ -27,7 +27,7 @@ loadBtn.addEventListener('click', () => {
         card.classList.add('product-card');
         //    c. Set the innerText of the card to show the product Name and Price.
         //       (Hint: use product.name and product.price)
-        card.innerHTML = product.name + ": $" + product.price;
+        card.innerHTML = `<span>${product.name}</span><span>$${product.price}</span>`;
         //    d. Append the card to the 'listContainer'.
         listContainer.appendChild(card);
     });
