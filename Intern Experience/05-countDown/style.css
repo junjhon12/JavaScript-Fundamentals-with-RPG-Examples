@@ -1,0 +1,26 @@
+body {
+    background-color: #000;
+    color: #0f0; /* Matrix Green */
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.launch-container {
+    text-align: center;
+    border: 2px solid #0f0;
+    padding: 50px;
+    box-shadow: 0 0 20px #0f0;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#countdown-display {
+    font-size: 6rem;
+    font-weight: bold;
+}
