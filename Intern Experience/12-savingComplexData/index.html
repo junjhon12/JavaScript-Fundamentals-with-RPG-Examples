@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Persistent To-Do</title>
+    <style>
+        body { font-family: sans-serif; display: flex; justify-content: center; padding-top: 50px; background: #e0e0e0; }
+        .container { background: white; padding: 2rem; border-radius: 8px; width: 350px; }
+        .input-group { display: flex; gap: 10px; margin-bottom: 20px; }
+        input { flex-grow: 1; padding: 8px; }
+        button { background: #0984e3; color: white; border: none; padding: 8px 15px; cursor: pointer; }
+        ul { list-style: none; padding: 0; }
+        li { background: #f1f2f6; border-bottom: 1px solid #ccc; padding: 10px; margin-bottom: 5px; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>My Saved Tasks</h2>
+        <div class="input-group">
+            <input type="text" id="task-input" placeholder="New Task...">
+            <button id="add-btn">Add</button>
+        </div>
+        <ul id="task-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
