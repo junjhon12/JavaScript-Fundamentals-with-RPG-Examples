@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Price Tagger</title>
+    <style>
+        body { font-family: 'Arial', sans-serif; background: #dfe6e9; display: flex; justify-content: center; align-items: center; height: 100vh; }
+        .container { background: white; padding: 2rem; border-radius: 10px; text-align: center; width: 400px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        h2 { color: #2d3436; }
+        #price-container { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 20px; }
+        
+        /* The CSS class for the tags we will generate */
+        .price-tag {
+            background: #00b894;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            box-shadow: 0 4px 0 #00947e;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Summer Sale</h2>
+        <div id="price-container">
+            </div>
+        <button id="format-btn" style="margin-top:20px; padding:10px 20px; cursor:pointer;">Generate Tags</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
