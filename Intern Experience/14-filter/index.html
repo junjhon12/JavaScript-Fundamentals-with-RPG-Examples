@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spam Filter</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background: #dfe6e9; display: flex; justify-content: center; padding-top: 50px; }
+        .container { background: white; padding: 2rem; border-radius: 8px; width: 400px; }
+        .comment { padding: 10px; border-bottom: 1px solid #eee; }
+        .comment:last-child { border-bottom: none; }
+        .spam { background-color: #fab1a0; text-decoration: line-through; color: #636e72; } /* Just for reference, we usually hide them completely */
+        button { background: #d63031; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; float: right; margin-bottom: 20px;}
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <button id="filter-btn">Remove Spam</button>
+        <h2>Comments</h2>
+        <div id="comment-list"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
