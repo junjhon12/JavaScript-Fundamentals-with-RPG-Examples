@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Lite</title>
+    <style>
+        body { font-family: 'Arial', sans-serif; background: #81ecec; display: flex; justify-content: center; align-items: center; height: 100vh; }
+        .card { background: white; padding: 2rem; border-radius: 15px; text-align: center; width: 300px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        h1 { margin: 0; color: #2d3436; }
+        .temp { font-size: 4rem; font-weight: bold; color: #0984e3; margin: 10px 0; }
+        .desc { font-size: 1.2rem; color: #b2bec3; text-transform: uppercase; letter-spacing: 2px; }
+        button { background: #00cec9; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; margin-top: 20px; font-weight: bold; }
+        button:hover { background: #00b894; }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1 id="city">City</h1>
+        <div class="temp" id="temp">--°</div>
+        <div class="desc" id="desc">...</div>
+        <button id="refresh-btn">Get Weather</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
