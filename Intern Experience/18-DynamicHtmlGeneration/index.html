@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TechGram</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background: #f0f2f5; display: flex; justify-content: center; padding-top: 50px; }
+        .feed { width: 400px; display: flex; flex-direction: column; gap: 20px; }
+        
+        /* The CSS for the cards you will generate */
+        .profile-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .avatar { width: 60px; height: 60px; border-radius: 50%; object-fit: cover; border: 2px solid #e1e4e8; }
+        .info { flex-grow: 1; }
+        h3 { margin: 0; font-size: 1.1rem; color: #1c1e21; }
+        p { margin: 5px 0 0; color: #65676b; font-size: 0.9rem; }
+        button { background: #1877f2; color: white; border: none; padding: 8px 16px; border-radius: 6px; font-weight: bold; cursor: pointer; }
+        button:hover { background: #166fe5; }
+    </style>
+</head>
+<body>
+
+    <div class="feed" id="feed-container">
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
