@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Debounce Search</title>
+    <style>
+        body { font-family: 'Courier New', monospace; background: #222; color: #0f0; display: flex; justify-content: center; padding-top: 50px; }
+        .terminal { border: 2px solid #0f0; padding: 2rem; width: 400px; box-shadow: 0 0 20px #0f0; }
+        input { background: black; border: 1px solid #0f0; color: #0f0; padding: 10px; width: 100%; font-size: 1.2rem; outline: none; }
+        #log { margin-top: 20px; height: 150px; overflow-y: auto; border-top: 1px dashed #0f0; padding-top: 10px; }
+        .entry { margin-bottom: 5px; opacity: 0.8; }
+    </style>
+</head>
+<body>
+
+    <div class="terminal">
+        <h2>> SEARCH_PROTOCOL</h2>
+        <input type="text" id="search-input" placeholder="Type query...">
+        <div id="log">Logs will appear here...</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

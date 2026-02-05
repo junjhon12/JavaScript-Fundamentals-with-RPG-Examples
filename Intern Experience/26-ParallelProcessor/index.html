@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Parallel Fetch</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background: #2c3e50; color: white; display: flex; justify-content: center; padding-top: 50px; }
+        .dashboard { width: 500px; }
+        .card { background: #34495e; padding: 15px; margin-bottom: 10px; border-radius: 5px; border-left: 5px solid #2ecc71; }
+        button { background: #3498db; color: white; border: none; padding: 15px 30px; font-size: 1.2rem; cursor: pointer; width: 100%; font-weight: bold; }
+        #log { margin-top: 20px; font-family: monospace; color: #f1c40f; }
+    </style>
+</head>
+<body>
+
+    <div class="dashboard">
+        <button id="load-btn">LOAD DASHBOARD (Parallel)</button>
+        <div id="results-area"></div>
+        <div id="log">Status: Idle</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

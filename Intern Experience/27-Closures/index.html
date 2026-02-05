@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Secure Vote</title>
+    <style>
+        body { font-family: 'Courier New', monospace; background: #2d3436; color: white; display: flex; justify-content: center; padding-top: 50px; }
+        .booth { border: 4px solid #74b9ff; padding: 2rem; width: 300px; text-align: center; box-shadow: 0 0 20px #74b9ff; }
+        h2 { margin-top: 0; color: #74b9ff; }
+        #count-display { font-size: 4rem; margin: 20px 0; }
+        button { background: #74b9ff; color: #2d3436; border: none; padding: 15px 30px; font-size: 1.2rem; cursor: pointer; font-weight: bold; }
+        button:hover { background: white; }
+    </style>
+</head>
+<body>
+
+    <div class="booth">
+        <h2>OFFICIAL BALLOT</h2>
+        <div id="count-display">0</div>
+        <button id="vote-btn">CAST VOTE</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
